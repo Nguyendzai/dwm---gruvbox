@@ -14,10 +14,11 @@ This is my dwm configuration files. Here you'll find:
 - picom (picom-ftlabs-git)
 - dunst
 - zathura
+- ranger
 
 ## Installation
 ```bash
-git clone https://github.com/Andrey0189/dwm-gruvbox
+git clone https://github.com/Nguyendzai/dwm---gruvbox.git
 cd dwm-gruvbox
 cd dwm
 make && sudo make install
