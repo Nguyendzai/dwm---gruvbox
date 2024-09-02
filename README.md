@@ -16,9 +16,23 @@ This is my dwm configuration files. Here you'll find:
 - zathura
 - ranger
 
+## Requirement
+- base-devel
+- rustup
+- thunar
+- thunar-archive-plugin
+- papirus-icon-theme
+- breeze-snow-cursor-theme
+- zathura-pdf-mupdf
+- xarchiver
+- ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+- ttf-joypixels ttf-terminus-nerd
+- mpv
+
 ## Installation
 ```bash
 git clone https://github.com/Nguyendzai/dwm---gruvbox.git
+mv dwm---gruvbox dwm-gruvbox
 cd dwm-gruvbox
 cd dwm
 make && sudo make install
