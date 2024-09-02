@@ -1,8 +1,9 @@
 #!/bin/sh
 
-feh --bg-scale ~/Downloads/wp.png
-setxkbmap us,ru -option 'grp:caps_toggle'
+feh --bg-scale ~/dwm-gruvbox/walls/wp2.png
+#setxkbmap us,ru -option 'grp:caps_toggle'
 dwmblocks &
+picom --config ~/.config/picom/picom.conf &
 
 while true; do
 	# Log stderror to a file

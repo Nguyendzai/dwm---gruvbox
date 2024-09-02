@@ -9,7 +9,11 @@ This is my dwm configuration files. Here you'll find:
 - fish
 - starship
 - dmenu
-- picom
+- flameshot
+- feh
+- picom (picom-ftlabs-git)
+- dunst
+- zathura
 
 ## Installation
 ```bash
@@ -36,4 +40,6 @@ If you don't
 ```bash
 echo "exec /usr/local/bin/startdwm.sh" >> ~/.xinitrc
 ```
+### Note
+If you use ibus-bamboo choose flag icons.
 
