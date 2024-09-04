@@ -18,6 +18,7 @@ This is my dwm configuration files. Here you'll find:
 
 ## Requirement
 - base-devel
+- rofi
 - rustup
 - thunar
 - thunar-archive-plugin
@@ -28,6 +29,7 @@ This is my dwm configuration files. Here you'll find:
 - ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd
 - ttf-joypixels ttf-terminus-nerd
 - mpv
+- greenclip
 
 ## Installation
 ```bash

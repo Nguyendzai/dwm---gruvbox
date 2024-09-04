@@ -252,6 +252,10 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period,     focusmon,               {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,      tagmon,                 {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period,     tagmon,                 {.i = +1 } },
+  { Mod4Mask|Mod1Mask,            XK_b,          spawn,          SHCMD("~/dwm-gruvbox/src/rofi-bluetooth") },
+  { Mod4Mask|Mod1Mask,            XK_n,          spawn,          SHCMD("~/dwm-gruvbox/src/NetManagerDM")},
+  { Mod4Mask|Mod1Mask,            XK_c,          spawn,          SHCMD("rofi -modi 'clipboard:greenclip print' -theme '~/dwm-gruvbox/src/rofi-themes/Clipboard.rasi' -show clipboard -run-command '{cmd}'") },
+  { Mod4Mask|Mod1Mask,            XK_w,          spawn,          SHCMD("~/dwm-gruvbox/src/WallSelect")},
 	
   /* custom  */
 	{ 0,                            XF86XK_AudioMute,           spawn,          SHCMD("pactl set-sink-mute 0 toggle") },
