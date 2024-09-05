@@ -67,7 +67,8 @@ If you use ibus-bamboo choose flag icons.
 sudo mkdir -p /etc/X11/xorg.conf.d
 sudo nano /etc/X11/xorg.conf.d/40-libinput.conf
 ```
-- add:
+- Add the following content to the file:
+```
 Section "InputClass"
     Identifier "libinput touchpad catchall"
     MatchIsTouchpad "on"
@@ -75,3 +76,4 @@ Section "InputClass"
     Driver "libinput"
     Option "NaturalScrolling" "true"
 EndSection
+```
