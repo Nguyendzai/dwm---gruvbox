@@ -30,6 +30,7 @@ This is my dwm configuration files. Here you'll find:
 - ttf-joypixels ttf-terminus-nerd
 - mpv
 - greenclip
+- arandr
 
 ## Installation
 ```bash
@@ -60,3 +61,17 @@ echo "exec /usr/local/bin/startdwm.sh" >> ~/.xinitrc
 ### Note
 If you use ibus-bamboo choose flag icons.
 
+### Trackpad
+- xf86-input-libinput
+```bash
+sudo mkdir -p /etc/X11/xorg.conf.d
+sudo nano /etc/X11/xorg.conf.d/40-libinput.conf
+```
+- add:
+Section "InputClass"
+    Identifier "libinput touchpad catchall"
+    MatchIsTouchpad "on"
+    MatchDevicePath "/dev/input/event*"
+    Driver "libinput"
+    Option "NaturalScrolling" "true"
+EndSection
