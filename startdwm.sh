@@ -5,6 +5,8 @@ feh --bg-scale ~/dwm-gruvbox/walls/wp1.png
 dwmblocks &
 picom --config ~/.config/picom/picom.conf &
 greenclip daemon &
+
+#python3 ~/dwm-gruvbox/scripts/key_sound.py &
 while true; do
 	# Log stderror to a file
 	dwm 2>~/.dwm.log

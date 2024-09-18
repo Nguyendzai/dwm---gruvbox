@@ -74,6 +74,11 @@ Section "InputClass"
     MatchIsTouchpad "on"
     MatchDevicePath "/dev/input/event*"
     Driver "libinput"
+
+    # Enable natural scrolling
     Option "NaturalScrolling" "true"
+
+    # Enable tap to click
+    Option "Tapping" "true"
 EndSection
 ```

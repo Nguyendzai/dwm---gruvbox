@@ -3,7 +3,7 @@ static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 /*  {"┇  ", "xset -q|grep LED| awk '{ if (substr ($10,5,1) == 1) print \"[RU]\"; else print \"[EN]\"; }'", 0, 1},*/
 
-  {" ", "/home/nguyenmachine/dwm-gruvbox/scripts/ibus_status.sh", 1, 0},
+  {" ", "~/dwm-gruvbox/scripts/ibus_status.sh", 1, 0},
 /*  {"󱄡 ", "/home/nguyenmachine/dwm-gruvbox/scripts/volume.sh", 1, 0},*/
 	{"󱄡 ", "amixer get Master | grep -oP '\\d+%' | head -n 1", 1, 0},  // Dòng hiển thị âm lượng
 /*  {"󰃡 ", "/home/nguyenmachine/dwm-gruvbox/scripts/brightness.sh", 1, 0},*/

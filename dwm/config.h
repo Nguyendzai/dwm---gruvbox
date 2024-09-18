@@ -253,16 +253,14 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,      tagmon,                 {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period,     tagmon,                 {.i = +1 } },
   { Mod4Mask|Mod1Mask,            XK_b,          spawn,          SHCMD("~/dwm-gruvbox/src/rofi-bluetooth") },
-  { Mod4Mask|Mod1Mask,            XK_n,          spawn,          SHCMD("~/dwm-gruvbox/src/NetManagerDM")},
+  { Mod4Mask|Mod1Mask,            XK_n,          spawn,          SHCMD("/usr/bin/python ~/dwm-gruvbox/src/NetManagerDM") },
   { Mod4Mask|Mod1Mask,            XK_c,          spawn,          SHCMD("rofi -modi 'clipboard:greenclip print' -theme '~/dwm-gruvbox/src/rofi-themes/Clipboard.rasi' -show clipboard -run-command '{cmd}'") },
   { Mod4Mask|Mod1Mask,            XK_w,          spawn,          SHCMD("~/dwm-gruvbox/src/WallSelect")},
-	
+
   /* custom  */
 	{ 0,                            XF86XK_AudioMute,           spawn,          SHCMD("pactl set-sink-mute 0 toggle") },
 	{ 0,                            XF86XK_AudioLowerVolume,    spawn,          SHCMD("pactl set-sink-volume 0 -3%") },
   { 0,                            XF86XK_AudioRaiseVolume,    spawn,          SHCMD("pactl set-sink-volume 0 +3%") },
-  /*{ 0,                            XF86XK_MonBrightnessUp,     spawn,          SHCMD("brightnessctl set +5%") },
-  { 0,                            XF86XK_MonBrightnessDown,   spawn,          SHCMD("brightnessctl set 5%-") },*/
   { 0,                            XF86XK_MonBrightnessUp,     spawn,          SHCMD("brightnessctl --device='intel_backlight' set +5%") },
   { 0,                            XF86XK_MonBrightnessDown,   spawn,          SHCMD("brightnessctl --device='intel_backlight' set 5%-") },
   { 0,                            XK_Print,                   spawn,          {.v = flameshot} },
