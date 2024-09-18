@@ -1,0 +1,83 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.editor.showTabs": "none",
+  "editor.cursorSurroundingLines": 5,
+  "editor.fontFamily": "Geist Mono, JetBrainsMonoNL NFP",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.fontWeight": "500",
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "on" /*relative*/,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggestFontSize": 14,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": false,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "window.zoomLevel": 0.5,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "readme",
+  "zenMode.hideLineNumbers": false,
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.inheritEnv": false,
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "vscode_custom_css.imports": [
+    "file:///home/nguyen/dwm-gruvbox/src/vscode.theme/custom-vscode.css",
+    "file:///home/nguyen/dwm-gruvbox/src/vscode.theme/vscode-script.js"
+  ],
+  "breadcrumbs.enabled": false,
+  "terminal.integrated.fontFamily": "JetBrainsMonoNL NFP",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "notebook.lineNumbers": "on",
+  "idf.espIdfPath": "/home/nguyen/esp/v5.3.1/esp-idf",
+  "idf.pythonBinPath": "/home/nguyen/.espressif/python_env/idf5.3_py3.12_env/bin/python",
+  "idf.toolsPath": "/home/nguyen/.espressif",
+  "idf.customExtraPaths": "/home/nguyen/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/nguyen/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/nguyen/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin:/home/nguyen/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin:/home/nguyen/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/nguyen/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/bin:/home/nguyen/.espressif/tools/esp-rom-elfs/20240305",
+  "idf.customExtraVars": {
+    "OPENOCD_SCRIPTS": "/home/nguyen/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts",
+    "ESP_ROM_ELF_DIR": "/home/nguyen/.espressif/tools/esp-rom-elfs/20240305/"
+  },
+  "idf.gitPath": "git",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.location": "bottom",
+  "workbench.layoutControl.enabled": false,
+  "python.defaultInterpreterPath": "/bin/python",
+  "cmake.showOptionsMovedNotification": false
+}
