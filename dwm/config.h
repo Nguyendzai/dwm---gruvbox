@@ -1,15 +1,16 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx       = 3;   /* border pixel of windows */
+static const unsigned int borderpx       = 0;   /* border pixel of windows */
 static const unsigned int snap           = 32;  /* snap pixel */
+static const unsigned int cornerrad      = 4;   /**/
 static const unsigned int gappih         = 20;  /* horiz inner gap between windows */
 static const unsigned int gappiv         = 20;  /* vert inner gap between windows */
 static const unsigned int gappoh         = 20;  /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov         = 20;  /* vert outer gap between windows and screen edge */
 static const int smartgaps_fact          = 0;   /* gap factor when there is only one client; 0 = no gaps, 3 = 3x outer gaps */
 static const int showbar                 = 1;   /* 0 means no bar */
-static const int topbar                  = 1;   /* 0 means bottom bar */
+static const int topbar                  = 0;   /* 0 means bottom bar */
 /* Status is to be shown on: -1 (all monitors), 0 (a specific monitor by index), 'A' (active monitor) */
 static const int statusmon               = 'A';
 static const unsigned int systrayspacing = 2;   /* systray spacing */
@@ -258,11 +259,11 @@ static const Key keys[] = {
   { Mod4Mask|Mod1Mask,            XK_w,          spawn,          SHCMD("~/dwm-gruvbox/src/WallSelect")},
 
   /* custom  */
-	{ 0,                            XF86XK_AudioMute,           spawn,          SHCMD("pactl set-sink-mute 0 toggle") },
-	{ 0,                            XF86XK_AudioLowerVolume,    spawn,          SHCMD("pactl set-sink-volume 0 -3%") },
-  { 0,                            XF86XK_AudioRaiseVolume,    spawn,          SHCMD("pactl set-sink-volume 0 +3%") },
-  { 0,                            XF86XK_MonBrightnessUp,     spawn,          SHCMD("brightnessctl --device='intel_backlight' set +5%") },
-  { 0,                            XF86XK_MonBrightnessDown,   spawn,          SHCMD("brightnessctl --device='intel_backlight' set 5%-") },
+	{ 0,                            XF86XK_AudioMute,           spawn,          SHCMD("~/dwm-gruvbox/scripts/volume_control.sh mute") },
+	{ 0,                            XF86XK_AudioLowerVolume,    spawn,          SHCMD("~/dwm-gruvbox/scripts/volume_control.sh down") },
+  { 0,                            XF86XK_AudioRaiseVolume,    spawn,          SHCMD("~/dwm-gruvbox/scripts/volume_control.sh up") },
+  { 0,                            XF86XK_MonBrightnessUp,     spawn,          SHCMD("~/dwm-gruvbox/scripts/brightness_control.sh up") },
+  { 0,                            XF86XK_MonBrightnessDown,   spawn,          SHCMD("~/dwm-gruvbox/scripts/brightness_control.sh down") },
   { 0,                            XK_Print,                   spawn,          {.v = flameshot} },
   { 0,                            XK_ISO_Next_Group,          spawn,          SHCMD("pkill -RTMIN+10 dwmblocks") },
 
